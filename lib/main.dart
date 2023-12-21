@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/EditName.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/EditProfilePic.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/HomepageStaff.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/PostFood.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/Profile.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/RealtimeUpdate.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/RealtimeUpdate2.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/ViewReviewAndRating.dart';
 
 void main() {
   runApp(const FigmaToCodeApp());
@@ -17,7 +24,7 @@ class FigmaToCodeApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          HomepageStaff(),
+          EditName(),
         ]),
       ),
     );

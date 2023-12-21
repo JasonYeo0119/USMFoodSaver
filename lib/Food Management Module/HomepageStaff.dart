@@ -7,7 +7,7 @@ class HomepageStaff extends StatelessWidget {
       children: [
         Container(
           width: 390,
-          height: 754,
+          height: 777,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Color(0xFFE5FFFC)),
           child: Stack(
