@@ -1,7 +1,14 @@
 import "package:flutter/material.dart";
+import "package:usm_foodsaver/Food%20Management%20Module/HomepageStaff.dart";
 
 class ViewReviewAndRating extends StatelessWidget {
   @override
+  //go back
+  void navigateNextPage(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return HomepageStaff();
+    }));
+  }
   Widget build(BuildContext context) {
     return Column(
       children: [
@@ -22,7 +29,7 @@ class ViewReviewAndRating extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 60,
+                left: 40,
                 top: 32,
                 child: SizedBox(
                   width: 141,
@@ -32,7 +39,7 @@ class ViewReviewAndRating extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 24,
+                      fontSize: 22,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w600,
                       height: 0.04,
@@ -43,17 +50,16 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 15,
-                top: 10,
-                child: Container(
-                  width: 30,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/30x30"),
-                      fit: BoxFit.fill,
-                    ),
+                top: 13,
+                child: TextButton(
+                  onPressed: () {navigateNextPage(context);},  //blue
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
+                child: Image.asset('lib/assets/images/cancel button.png'),
                 ),
+                width: 25,
+                height: 25,
               ),
               Positioned(
                 left: 36,
@@ -80,7 +86,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 54,
-                top: 100,
+                top: 115,
                 child: Text(
                   'Anonymous',
                   textAlign: TextAlign.center,
@@ -96,7 +102,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 260,
-                top: 100,
+                top: 115,
                 child: Text(
                   '6 hours ago',
                   textAlign: TextAlign.center,
@@ -230,7 +236,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 62,
-                top: 240,
+                top: 255,
                 child: Text(
                   'Ng Jie Xing',
                   textAlign: TextAlign.center,
@@ -246,7 +252,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 257,
-                top: 240,
+                top: 255,
                 child: Text(
                   '10 hours ago',
                   textAlign: TextAlign.center,
@@ -380,7 +386,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 57,
-                top: 380,
+                top: 395,
                 child: Text(
                   'Tan Xiao Hu',
                   textAlign: TextAlign.center,
@@ -396,7 +402,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 275,
-                top: 380,
+                top: 395,
                 child: Text(
                   '1 day ago',
                   textAlign: TextAlign.center,
@@ -530,7 +536,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 46,
-                top: 520,
+                top: 536,
                 child: Text(
                   'Mohd. Ali Bin..',
                   textAlign: TextAlign.center,
@@ -664,7 +670,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 48,
-                top: 660,
+                top: 676,
                 child: Text(
                   'Vanish A/L T..',
                   textAlign: TextAlign.center,
@@ -798,7 +804,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 53,
-                top: 800,
+                top: 816,
                 child: Text(
                   'Anonymous',
                   textAlign: TextAlign.center,
@@ -932,7 +938,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 53,
-                top: 940,
+                top: 956,
                 child: Text(
                   'Anonymous',
                   textAlign: TextAlign.center,
@@ -1043,7 +1049,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 275,
-                top: 520,
+                top: 536,
                 child: Text(
                   '1 day ago',
                   textAlign: TextAlign.center,
@@ -1059,7 +1065,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 275,
-                top: 660,
+                top: 676,
                 child: Text(
                   '1 day ago',
                   textAlign: TextAlign.center,
@@ -1075,7 +1081,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 274,
-                top: 800,
+                top: 816,
                 child: Text(
                   '2 day ago',
                   textAlign: TextAlign.center,
@@ -1091,7 +1097,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 274,
-                top: 940,
+                top: 956,
                 child: Text(
                   '3 day ago',
                   textAlign: TextAlign.center,
@@ -1107,7 +1113,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 54,
-                top: 123,
+                top: 133,
                 child: Text(
                   'The food is too spicy.',
                   textAlign: TextAlign.center,
@@ -1122,7 +1128,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 62,
-                top: 263,
+                top: 273,
                 child: Text(
                   'The food is not match with the photo but taste good.',
                   textAlign: TextAlign.center,
@@ -1137,7 +1143,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 57,
-                top: 405,
+                top: 415,
                 child: SizedBox(
                   width: 282,
                   child: Text(
@@ -1154,7 +1160,7 @@ class ViewReviewAndRating extends StatelessWidget {
               ),
               Positioned(
                 left: 53,
-                top: 829,
+                top: 839,
                 child: SizedBox(
                   width: 282,
                   child: Text(

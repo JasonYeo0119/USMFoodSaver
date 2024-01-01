@@ -52,6 +52,19 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - lib/assets/images/make a post.png
+    - lib/assets/images/address icon.png
+    - lib/assets/images/cancel button.png
+    - lib/assets/images/clock.png
+    - lib/assets/images/email.png
+    - lib/assets/images/eye.png
+    - lib/assets/images/password.png
+    - lib/assets/images/real time update.png
+    - lib/assets/images/update profile.png
+    - lib/assets/images/view rating.png
+    - lib/assets/images/Uncle hooi’s cafe.png
+    - lib/assets/images/food.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

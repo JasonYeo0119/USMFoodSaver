@@ -1,7 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/PostFood.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/Profile.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/RealtimeUpdate.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/ViewReviewAndRating.dart';
 
 class HomepageStaff extends StatelessWidget {
   @override
+  //blue button
+  void navigateNextPage(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return PostFood();
+    }));
+    }
+
+    //yellow button
+  void navigateNextPage2(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return ViewReviewAndRating();
+    }));
+  }
+
+    //green button
+  void navigateNextPage3(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return RealtimeUpdate();
+    }));
+  }
+
+    //red button
+  void navigateNextPage4(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return Profile();
+    }));
+  }
+
   Widget build(BuildContext context) {
     return Column(
       children: [
@@ -15,6 +47,11 @@ class HomepageStaff extends StatelessWidget {
               Positioned(
                 left: 38,
                 top: 106,
+                child: TextButton(
+                onPressed: () {navigateNextPage(context);},  //blue
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                ),
                 child: Container(
                   width: 316,
                   height: 100,
@@ -35,9 +72,15 @@ class HomepageStaff extends StatelessWidget {
                   ),
                 ),
               ),
+              ),
               Positioned(
                 left: 38,
                 top: 253,
+                child: TextButton(
+                  onPressed: () {navigateNextPage2(context);}, //yellow
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                 child: Container(
                   width: 316,
                   height: 100,
@@ -58,9 +101,15 @@ class HomepageStaff extends StatelessWidget {
                   ),
                 ),
               ),
+              ),
               Positioned(
                 left: 38,
                 top: 400,
+                child: TextButton(
+                  onPressed: () {navigateNextPage3(context);}, //green
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                 child: Container(
                   width: 316,
                   height: 100,
@@ -81,9 +130,15 @@ class HomepageStaff extends StatelessWidget {
                   ),
                 ),
               ),
+              ),
               Positioned(
                 left: 38,
                 top: 547,
+                child: TextButton(
+                  onPressed: () {navigateNextPage4(context);}, //red
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                 child: Container(
                   width: 316,
                   height: 100,
@@ -102,6 +157,7 @@ class HomepageStaff extends StatelessWidget {
                       )
                     ],
                   ),
+                ),
                 ),
               ),
               Positioned(
@@ -130,21 +186,16 @@ class HomepageStaff extends StatelessWidget {
               Positioned(
                 left: 37,
                 top: 688,
-                child: Container(
-                  width: 37,
-                  height: 37,
-                  decoration: ShapeDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/37x37"),
-                      fit: BoxFit.fill,
+                      child: ClipOval(
+                      child: Image.asset('lib/assets/images/Uncle hooi’s cafe.png',
+                      width:37,
+                      height: 37,
+                      ),
                     ),
-                    shape: OvalBorder(),
-                  ),
-                ),
               ),
               Positioned(
-                left: 81,
-                top: 694,
+                left: 84,
+                top: 714,
                 child: Text(
                   'Uncle Hooi Cafe',
                   textAlign: TextAlign.center,
@@ -177,8 +228,8 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 285,
-                top: 694,
+                left: 290,
+                top: 712,
                 child: Text(
                   'Sign out',
                   textAlign: TextAlign.center,
@@ -193,8 +244,8 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 6,
-                top: 35,
+                left: 8,
+                top: 65,
                 child: SizedBox(
                   width: 379,
                   height: 86,
@@ -213,8 +264,8 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 120,
-                top: 135,
+                left: 130,
+                top: 163,
                 child: SizedBox(
                   width: 149,
                   height: 86,
@@ -233,8 +284,8 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 121,
-                top: 300,
+                left: 130,
+                top: 313,
                 child: SizedBox(
                   width: 181,
                   height: 86,
@@ -253,8 +304,8 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 121,
-                top: 580,
+                left: 138,
+                top: 605,
                 child: SizedBox(
                   width: 170,
                   height: 86,
@@ -273,8 +324,8 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 121,
-                top: 437,
+                left: 130,
+                top: 457,
                 child: SizedBox(
                   width: 214,
                   height: 86,
@@ -293,60 +344,32 @@ class HomepageStaff extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 64,
-                top: 135,
-                child: Container(
-                  width: 46,
-                  height: 42,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fedit-button_6065488&psig=AOvVaw1cqD7UxXQY3pahk8acHYZC&ust=1702815489947000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJiKxsX7k4MDFQAAAAAdAAAAABAD"),
-                      fit: BoxFit.cover,
-                    ),
+                left: 60,
+                top: 125,
+                child: Image.asset('lib/assets/images/make a post.png'),
+                width: 60,
+                height: 60,
                   ),
-                ),
-              ),
               Positioned(
                 left: 67,
                 top: 283,
-                child: Container(
-                  width: 39,
-                  height: 39,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Ficon%2Ffavourite-star-button%2F149068&psig=AOvVaw0upusv2L5UvzMknzEugvKS&ust=1702816501990000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCX8fj7k4MDFQAAAAAdAAAAABAD"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
+                child: Image.asset('lib/assets/images/view rating.png'),
+                width: 46,
+                height: 42,
               ),
               Positioned(
                 left: 65,
                 top: 575,
-                child: Container(
-                  width: 43,
-                  height: 44,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ficon%2Fprofile_3106773&psig=AOvVaw2UiDrsq-1dKFuxi_3HakMj&ust=1702816175226000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOiemuT6k4MDFQAAAAAdAAAAABAi"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
+                child: Image.asset('lib/assets/images/update profile.png'),
+                width: 46,
+                height: 42,
               ),
               Positioned(
                 left: 67,
                 top: 430,
-                child: Container(
-                  width: 39,
-                  height: 39,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fnotifications-bell-button_61073&psig=AOvVaw3eTyEM6R7WR8EN2SqRY7P2&ust=1702816629796000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCl7rb8k4MDFQAAAAAdAAAAABAJ"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
+                child: Image.asset('lib/assets/images/real time update.png'),
+                width: 46,
+                height: 42,
               ),
             ],
           ),

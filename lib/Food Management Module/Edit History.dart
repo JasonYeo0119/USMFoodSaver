@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/Profile.dart';
 
 class EditHistory extends StatelessWidget {
   @override
+  //cancel button
+  void navigateNextPage(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return Profile();
+    }));
+  }
+  //save button
+  void navigateNextPage2(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return Profile();
+    }));
+  }
   Widget build(BuildContext context) {
     return Column(
       children: [
@@ -25,8 +38,8 @@ class EditHistory extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 66,
-                top: 8,
+                left: 40,
+                top: 32,
                 child: SizedBox(
                   width: 141,
                   height: 34,
@@ -37,7 +50,7 @@ class EditHistory extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24,
+                        fontSize: 22,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w600,
                         height: 0.04,
@@ -49,20 +62,14 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 15,
-                top: 10,
+                top: 13,
                 child: Opacity(
-                  opacity: 0.20,
-                  child: Container(
-                    width: 30,
-                    height: 30,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/30x30"),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
+                  opacity: 0.10,
+                  child: Image.asset('lib/assets/images/cancel button.png',
                   ),
                 ),
+                width: 25,
+                height: 25,
               ),
               Positioned(
                 left: 30,
@@ -170,7 +177,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 227,
-                top: 440,
+                top: 452,
                 child: Opacity(
                   opacity: 0.20,
                   child: Text(
@@ -218,30 +225,17 @@ class EditHistory extends StatelessWidget {
                 top: 71,
                 child: Opacity(
                   opacity: 0.20,
-                  child: Container(
-                    width: 132,
-                    height: 131,
-                    decoration: ShapeDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/132x131"),
-                        fit: BoxFit.fill,
-                      ),
-                      shape: OvalBorder(side: BorderSide(width: 1)),
-                      shadows: [
-                        BoxShadow(
-                          color: Color(0x3F000000),
-                          blurRadius: 4,
-                          offset: Offset(0, 4),
-                          spreadRadius: 0,
-                        )
-                      ],
+                  child: ClipOval(
+                    child: Image.asset('lib/assets/images/Uncle hooi’s cafe.png',
+                        width: 132,
+                        height: 131
                     ),
                   ),
                 ),
               ),
               Positioned(
                 left: 195,
-                top: 104,
+                top: 119,
                 child: Opacity(
                   opacity: 0.20,
                   child: Text(
@@ -260,7 +254,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 42,
-                top: 236,
+                top: 248,
                 child: Opacity(
                   opacity: 0.20,
                   child: Text(
@@ -279,7 +273,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 42,
-                top: 440,
+                top: 452,
                 child: Opacity(
                   opacity: 0.20,
                   child: Text(
@@ -298,7 +292,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 227,
-                top: 236,
+                top: 248,
                 child: Opacity(
                   opacity: 0.20,
                   child: Text(
@@ -317,7 +311,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 301,
-                top: 140,
+                top: 155,
                 child: Opacity(
                   opacity: 0.20,
                   child: Text(
@@ -357,7 +351,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 195,
-                top: 121,
+                top: 132,
                 child: SizedBox(
                   width: 129,
                   child: Opacity(
@@ -365,7 +359,7 @@ class EditHistory extends StatelessWidget {
                     child: Text(
                       'Join on 18 April 2023',
                       style: TextStyle(
-                        color: Colors.black.withOpacity(0.25),
+                        color: Colors.black,
                         fontSize: 8,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w500,
@@ -377,7 +371,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 300,
-                top: 108,
+                top: 119,
                 child: SizedBox(
                   width: 24,
                   height: 17,
@@ -400,7 +394,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 329,
-                top: 444,
+                top: 452,
                 child: SizedBox(
                   width: 24,
                   height: 17,
@@ -423,7 +417,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 146,
-                top: 444,
+                top: 452,
                 child: SizedBox(
                   width: 24,
                   height: 17,
@@ -446,7 +440,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 146,
-                top: 240,
+                top: 248,
                 child: SizedBox(
                   width: 24,
                   height: 17,
@@ -469,7 +463,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 329,
-                top: 240,
+                top: 248,
                 child: SizedBox(
                   width: 24,
                   height: 17,
@@ -624,26 +618,19 @@ class EditHistory extends StatelessWidget {
               Positioned(
                 left: 245,
                 top: 475,
-                child: Opacity(
-                  opacity: 0.20,
-                  child: Container(
-                    width: 89,
-                    height: 95,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/89x95"),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                  ),
+                child:Opacity(
+                  opacity: 0.15,
+                  child: Image.asset('lib/assets/images/password.png'),
                 ),
+                width: 89,
+                height: 95,
               ),
               Positioned(
                 left: 42,
-                top: 276,
+                top: 258,
                 child: SizedBox(
                   width: 128,
-                  height: 22,
+                  height: 50,
                   child: Opacity(
                     opacity: 0.20,
                     child: Text(
@@ -653,7 +640,7 @@ class EditHistory extends StatelessWidget {
                         fontSize: 11,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w500,
-                        height: 0.12,
+                        height: 1.5,
                         letterSpacing: -0.50,
                       ),
                     ),
@@ -662,7 +649,7 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 43,
-                top: 465,
+                top: 480,
                 child: SizedBox(
                   width: 128,
                   height: 22,
@@ -684,10 +671,10 @@ class EditHistory extends StatelessWidget {
               ),
               Positioned(
                 left: 227,
-                top: 266,
+                top: 258,
                 child: SizedBox(
                   width: 130,
-                  height: 72,
+                  height: 500,
                   child: Opacity(
                     opacity: 0.20,
                     child: Text(
@@ -697,13 +684,44 @@ class EditHistory extends StatelessWidget {
                         fontSize: 11,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w500,
-                        height: 0.17,
+                        height: 1.5,
                         letterSpacing: -0.50,
                       ),
                     ),
                   ),
                 ),
               ),
+              Positioned(
+                left: 245,
+                top: 274,
+                child: Opacity(
+                  opacity: 0.15,
+                  child: Image.asset('lib/assets/images/clock.png'),
+                ),
+                width: 90,
+                height: 89,
+              ),
+              Positioned(
+                left: 56,
+                top: 476,
+                child: Opacity(
+                  opacity: 0.15,
+                  child: Image.asset('lib/assets/images/email.png'),
+                ),
+                width: 99,
+                height: 93,
+              ),
+              Positioned(
+                left: 61,
+                top: 270,
+                child: Opacity(
+                  opacity: 0.15,
+                  child: Image.asset('lib/assets/images/address icon.png'),
+                ),
+                width: 90,
+                height: 92,
+              ),
+
               Positioned(
                 left: 0,
                 top: 215,
@@ -732,19 +750,19 @@ class EditHistory extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        left: 13,
-                        top: 50,
+                        left: 20,
+                        top: 37,
                         child: SizedBox(
                           width: 333,
-                          height: 229,
+                          height: 1000,
                           child: Text(
-                            'Economic Rice              19/5\nEconomic Rice             03/5\nEconomic Rice             22/4\nEconomic Rice              19/4\nFried Chicken                18/4',
+                            'Economic Rice               19/5\nEconomic Rice               03/5\nEconomic Rice               22/4\nEconomic Rice               19/4\nFried Chicken                 18/4',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w500,
-                              height: 0.12,
+                              height: 2.4,
                             ),
                           ),
                         ),
@@ -760,7 +778,7 @@ class EditHistory extends StatelessWidget {
                       ),
                       Positioned(
                         left: 15,
-                        top: 7,
+                        top: 26,
                         child: Text(
                           'Edit history',
                           style: TextStyle(
@@ -776,15 +794,21 @@ class EditHistory extends StatelessWidget {
                       Positioned(
                         left: 0,
                         top: 303,
+                        child: TextButton(
+                          onPressed: () {navigateNextPage(context);},
+                          style: TextButton.styleFrom(
+                            padding: EdgeInsets.zero,
+                          ),
                         child: Container(
                           width: 195,
                           height: 45,
                           decoration: BoxDecoration(color: Color(0xFFDB9A9A)),
                         ),
+                        ),
                       ),
                       Positioned(
                         left: 45,
-                        top: 315,
+                        top: 332,
                         child: SizedBox(
                           width: 100,
                           height: 19,
@@ -805,15 +829,21 @@ class EditHistory extends StatelessWidget {
                       Positioned(
                         left: 195,
                         top: 303,
+                        child: TextButton(
+                          onPressed: () {navigateNextPage2(context);},
+                          style: TextButton.styleFrom(
+                            padding: EdgeInsets.zero,
+                          ),
                         child: Container(
                           width: 195,
                           height: 45,
                           decoration: BoxDecoration(color: Color(0xFF9ADBBF)),
                         ),
                       ),
+                      ),
                       Positioned(
                         left: 248,
-                        top: 315,
+                        top: 331,
                         child: SizedBox(
                           width: 90,
                           height: 19,
@@ -833,91 +863,47 @@ class EditHistory extends StatelessWidget {
                       ),
                       Positioned(
                         left: 312,
-                        top: 53,
-                        child: Container(
-                          width: 34,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://via.placeholder.com/34x32"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
+                        top: 54,
+                        child: Icon(
+                          Icons.delete,
+                          size: 27,
+                          color: Colors.red,
                         ),
                       ),
                       Positioned(
                         left: 312,
-                        top: 98,
-                        child: Container(
-                          width: 34,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://via.placeholder.com/34x32"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
+                        top: 102,
+                        child: Icon(
+                          Icons.delete,
+                          size: 27,
+                          color: Colors.red,
                         ),
                       ),
                       Positioned(
                         left: 312,
-                        top: 149,
-                        child: Container(
-                          width: 34,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://via.placeholder.com/34x32"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
+                        top: 150,
+                        child: Icon(
+                          Icons.delete,
+                          size: 27,
+                          color: Colors.red,
                         ),
                       ),
                       Positioned(
                         left: 312,
-                        top: 195,
-                        child: Container(
-                          width: 34,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://via.placeholder.com/34x32"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
+                        top: 197,
+                        child: Icon(
+                          Icons.delete,
+                          size: 27,
+                          color: Colors.red,
                         ),
                       ),
                       Positioned(
                         left: 312,
                         top: 246,
-                        child: Container(
-                          width: 34,
-                          height: 32,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage("https://via.placeholder.com/34x32"),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 308,
-                        top: 279,
-                        child: Transform(
-                          transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-0.70),
-                          child: Container(
-                            width: 58.90,
-                            decoration: ShapeDecoration(
-                              shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                  width: 1,
-                                  strokeAlign: BorderSide.strokeAlignCenter,
-                                  color: Color(0xFFFF0000),
-                                ),
-                              ),
-                            ),
-                          ),
+                        child: Icon(
+                          Icons.delete,
+                          size: 27,
+                          color: Colors.red,
                         ),
                       ),
                     ],

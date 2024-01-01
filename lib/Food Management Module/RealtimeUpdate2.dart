@@ -1,7 +1,27 @@
 import "package:flutter/material.dart";
+import "package:usm_foodsaver/Food%20Management%20Module/HomepageStaff.dart";
+import "package:usm_foodsaver/Food%20Management%20Module/RealtimeUpdate.dart";
 
 class RealtimeUpdate2 extends StatelessWidget {
   @override
+  //go back
+  void navigateNextPage(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return HomepageStaff();
+    }));
+  }
+  //delete button
+  void navigateNextPage2(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return RealtimeUpdate();
+    }));
+  }
+  //save button
+  void navigateNextPage3(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return RealtimeUpdate();
+    }));
+  }
   Widget build(BuildContext context) {
     return Column(
       children: [
@@ -22,17 +42,17 @@ class RealtimeUpdate2 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 66,
-                top: 8,
+                left: 40,
+                top: 32,
                 child: SizedBox(
-                  width: 216,
+                  width: 200,
                   height: 34,
                   child: Text(
                     'Real-time update',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 24,
+                      fontSize: 22,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w600,
                       height: 0.04,
@@ -43,21 +63,20 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 15,
-                top: 10,
-                child: Container(
-                  width: 30,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/30x30"),
-                      fit: BoxFit.fill,
-                    ),
+                top: 13,
+                child: TextButton(
+                  onPressed: () {navigateNextPage(context);},  //blue
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
+                child: Image.asset('lib/assets/images/cancel button.png'),
                 ),
+                  width: 25,
+                height: 25,
               ),
               Positioned(
                 left: 9,
-                top: 87,
+                top: 95,
                 child: Container(
                   width: 371,
                   height: 206,
@@ -79,21 +98,16 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 133,
-                top: 173,
-                child: Container(
-                  width: 25,
-                  height: 20,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/25x20"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
+                top: 171,
+                child: Icon(
+                  Icons.location_on,
+                  size: 25,
+                  color: Colors.black,
                 ),
               ),
               Positioned(
                 left: 137,
-                top: 108,
+                top: 127,
                 child: Text(
                   'Economic Rice',
                   textAlign: TextAlign.center,
@@ -109,7 +123,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 137,
-                top: 133,
+                top: 148,
                 child: Text(
                   'Quantity',
                   textAlign: TextAlign.center,
@@ -125,7 +139,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 160,
-                top: 227,
+                top: 244,
                 child: Text(
                   'RM3.00',
                   textAlign: TextAlign.center,
@@ -141,7 +155,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 231,
-                top: 108,
+                top: 127,
                 child: Text(
                   '(Uncle Hooi Cafe)',
                   textAlign: TextAlign.center,
@@ -157,7 +171,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 160,
-                top: 202,
+                top: 215,
                 child: Text(
                   'Rice, Vegetable, Meat, Egg',
                   textAlign: TextAlign.center,
@@ -172,22 +186,17 @@ class RealtimeUpdate2 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 131,
+                left: 133,
                 top: 202,
-                child: Container(
-                  width: 29.17,
-                  height: 25,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/29x25"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
+                child: Icon(
+                  Icons.bookmark,
+                  size: 25,
+                  color: Colors.black,
                 ),
               ),
               Positioned(
                 left: 160,
-                top: 171,
+                top: 174,
                 child: SizedBox(
                   width: 208,
                   height: 24,
@@ -198,24 +207,19 @@ class RealtimeUpdate2 extends StatelessWidget {
                       fontSize: 11,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w600,
-                      height: 0.12,
+                      height: 1,
                       letterSpacing: -0.50,
                     ),
                   ),
                 ),
               ),
               Positioned(
-                left: 137,
+                left: 135,
                 top: 231,
-                child: Container(
-                  width: 17,
-                  height: 17,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/17x17"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
+                child: Icon(
+                  Icons.sell,
+                  size: 22,
+                  color: Colors.black,
                 ),
               ),
               Positioned(
@@ -230,7 +234,7 @@ class RealtimeUpdate2 extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
+              Positioned(  // - button
                 left: 134,
                 top: 264,
                 child: Container(
@@ -250,7 +254,7 @@ class RealtimeUpdate2 extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
+              Positioned(  // + button
                 left: 230,
                 top: 264,
                 child: Container(
@@ -270,9 +274,14 @@ class RealtimeUpdate2 extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
-                left: 312,
-                top: 264,
+              Positioned(  //save button
+                left: 308,
+                top: 251,
+                child: TextButton(
+                  onPressed: () {navigateNextPage3(context);},  //blue
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                 child: Container(
                   width: 55,
                   height: 22,
@@ -292,12 +301,13 @@ class RealtimeUpdate2 extends StatelessWidget {
                     ],
                   ),
                 ),
+                ),
               ),
               Positioned(
-                left: 204,
-                top: 133,
+                left: 202,
+                top: 148,
                 child: Text(
-                  '1',
+                  '3',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.black,
@@ -312,20 +322,17 @@ class RealtimeUpdate2 extends StatelessWidget {
               Positioned(
                 left: 18,
                 top: 119,
-                child: Container(
+                child: SizedBox(
                   width: 108,
-                  height: 108,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/108x108"),
-                      fit: BoxFit.cover,
-                    ),
+                  height: 125,
+                  child: Image.asset('lib/assets/images/food.jpg',
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
               Positioned(
                 left: 22,
-                top: 260,
+                top: 257,
                 child: Container(
                   width: 345,
                   decoration: ShapeDecoration(
@@ -339,8 +346,8 @@ class RealtimeUpdate2 extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 166,
-                top: 262,
+                left: 171,
+                top: 280,
                 child: Text(
                   'Quantity',
                   textAlign: TextAlign.center,
@@ -356,7 +363,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 142,
-                top: 270,
+                top: 280,
                 child: SizedBox(
                   width: 10,
                   height: 10,
@@ -376,7 +383,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 238,
-                top: 270,
+                top: 279,
                 child: SizedBox(
                   width: 10,
                   height: 10,
@@ -396,7 +403,7 @@ class RealtimeUpdate2 extends StatelessWidget {
               ),
               Positioned(
                 left: 318,
-                top: 271,
+                top: 276,
                 child: SizedBox(
                   width: 43,
                   height: 8,
@@ -414,9 +421,14 @@ class RealtimeUpdate2 extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
-                left: 23,
-                top: 264,
+              Positioned(  //delete button
+                left: 19,
+                top: 251,
+                child: TextButton(
+                  onPressed: () {navigateNextPage2(context);},  //blue
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                  ),
                 child: Container(
                   width: 55,
                   height: 22,
@@ -436,10 +448,11 @@ class RealtimeUpdate2 extends StatelessWidget {
                     ],
                   ),
                 ),
+                ),
               ),
               Positioned(
                 left: 29,
-                top: 271,
+                top: 276,
                 child: SizedBox(
                   width: 43,
                   height: 8,

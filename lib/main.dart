@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/DonePost.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/Edit%20History.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/EditAddress.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/EditEmail.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/EditName.dart';
+import 'package:usm_foodsaver/Food%20Management%20Module/EditPassword.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/EditProfilePic.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/HomepageStaff.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/PostFood.dart';
@@ -24,7 +29,7 @@ class FigmaToCodeApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          EditName(),
+          HomepageStaff(),
         ]),
       ),
     );
