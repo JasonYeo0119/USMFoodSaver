@@ -12,6 +12,34 @@ import 'package:usm_foodsaver/Food%20Management%20Module/Profile.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/RealtimeUpdate.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/RealtimeUpdate2.dart';
 import 'package:usm_foodsaver/Food%20Management%20Module/ViewReviewAndRating.dart';
+import 'package:usm_foodsaver/Membership System Module/CreateRestaurantProfile.dart';
+import 'package:usm_foodsaver/Membership System Module/CreateUserProfile.dart';
+import 'package:usm_foodsaver/Membership System Module/CustomerService.dart';
+import 'package:usm_foodsaver/Membership System Module/DuitNowScan.dart';
+import 'package:usm_foodsaver/Membership%20System%20Module/HomePage.dart';
+import 'package:usm_foodsaver/Membership System Module/Login.dart';
+import 'package:usm_foodsaver/Membership System Module/LoginFail.dart';
+import 'package:usm_foodsaver/Membership System Module/NormalProfile.dart';
+import 'package:usm_foodsaver/Membership System Module/PaymentMethod.dart';
+import 'package:usm_foodsaver/Membership System Module/PremiumPlan.dart';
+import 'package:usm_foodsaver/Membership System Module/PremiumPrice.dart';
+import 'package:usm_foodsaver/Membership System Module/PremiumProfile.dart';
+import 'package:usm_foodsaver/Membership System Module/PrivacyPolicy.dart';
+import 'package:usm_foodsaver/Membership System Module/RestaurantAddress.dart';
+import 'package:usm_foodsaver/Membership System Module/RestaurantName.dart';
+import 'package:usm_foodsaver/Membership System Module/RestaurantPic.dart';
+import 'package:usm_foodsaver/Membership System Module/RestaurantProfile.dart';
+import 'package:usm_foodsaver/Membership System Module/SignUp.dart';
+import 'package:usm_foodsaver/Membership System Module/StaffLogin.dart';
+import 'package:usm_foodsaver/Membership System Module/StaffSignUp.dart';
+import 'package:usm_foodsaver/Membership System Module/StudentLogin.dart';
+import 'package:usm_foodsaver/Membership System Module/StudentSignUp.dart';
+import 'package:usm_foodsaver/Membership System Module/Successful.dart';
+import 'package:usm_foodsaver/Membership System Module/TermsofService.dart';
+import 'package:usm_foodsaver/Membership System Module/tngScan.dart';
+import 'package:usm_foodsaver/Membership System Module/UploadSS.dart';
+import 'package:usm_foodsaver/Membership System Module/UploadUserPhoto.dart';
+import 'package:usm_foodsaver/Membership%20System%20Module/HomePage.dart';
 
 void main() {
   runApp(const FigmaToCodeApp());
@@ -29,7 +57,10 @@ class FigmaToCodeApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: ListView(children: [
-          HomepageStaff(),
+          HomePage(),
+          //Premiumprofile(),
+          //Normalprofile(),
+          //Createuserprofile(),
         ]),
       ),
     );

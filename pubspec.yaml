@@ -65,6 +65,21 @@ flutter:
     - lib/assets/images/view rating.png
     - lib/assets/images/Uncle hooi’s cafe.png
     - lib/assets/images/food.jpg
+    - lib/assets/images/USM FoodSaver Logo.png
+    - lib/assets/images/support agent.png
+    - lib/assets/images/question mark.png
+    - lib/assets/images/mushroom.png
+    - lib/assets/images/pin.png
+    - lib/assets/images/exclamation question mark.png
+    - lib/assets/images/tng.png
+    - lib/assets/images/DuitNow.png
+    - lib/assets/images/tngQR.png
+    - lib/assets/images/DuitNowQR.png
+    - lib/assets/images/hooray.png
+    - lib/assets/images/upload symbol.png
+    - lib/assets/images/sad emoji.png
+    - lib/assets/images/house.png
+    - lib/assets/images/Oppa1.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
