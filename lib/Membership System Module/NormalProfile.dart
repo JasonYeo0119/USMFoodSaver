@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:usm_foodsaver/Membership%20System%20Module/CreateUserProfile.dart';
 import 'package:usm_foodsaver/Membership%20System%20Module/HomePage.dart';
 import 'package:usm_foodsaver/Membership%20System%20Module/PremiumPlan.dart';
+import 'package:usm_foodsaver/Reward%20Module/presentation/reward_system_screen/reward_system_screen.dart';
 
 class Normalprofile extends StatelessWidget {
   void navigateNextPage(BuildContext ctx) {
@@ -19,6 +20,12 @@ class Normalprofile extends StatelessWidget {
   void navigateNextPage3(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
       return HomePage();
+    }));
+  }
+
+  void navigateNextPage4(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return RewardSystemScreen();
     }));
   }
 
@@ -72,8 +79,8 @@ class Normalprofile extends StatelessWidget {
                   size: 40,
                   color: Colors.black,
                 ),
-                  width: 34,
-                  height: 34,
+                width: 34,
+                height: 34,
               ),
               Positioned(
                 left: 215,
@@ -97,24 +104,26 @@ class Normalprofile extends StatelessWidget {
                 left: 207,
                 top: 199,
                 child: TextButton(
-                  onPressed:  () {navigateNextPage(context);},
-                  style:  TextButton.styleFrom (
-                    padding:  EdgeInsets.zero,
+                  onPressed: () {
+                    navigateNextPage(context);
+                  },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
-                child: Container(
-                  width: 157,
-                  height: 37,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF908E8E),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    shadows: [
-                      BoxShadow(
-                        color: Color(0x3F000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
-                        spreadRadius: 0,
+                  child: Container(
+                    width: 157,
+                    height: 37,
+                    decoration: ShapeDecoration(
+                      color: Color(0xFF908E8E),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      shadows: [
+                        BoxShadow(
+                          color: Color(0x3F000000),
+                          blurRadius: 4,
+                          offset: Offset(0, 4),
+                          spreadRadius: 0,
                         )
                       ],
                     ),
@@ -174,8 +183,8 @@ class Normalprofile extends StatelessWidget {
                 left: 25,
                 top: 80,
                 child: Image.asset('lib/assets/images/Oppa1.png'),
-                  width: 170,
-                  height: 170,
+                width: 170,
+                height: 170,
               ),
               Positioned(
                 left: 158,
@@ -198,20 +207,22 @@ class Normalprofile extends StatelessWidget {
                 left: 166,
                 top: 731,
                 child: TextButton(
-                  onPressed:  () {navigateNextPage3(context);},
-                  style:  TextButton.styleFrom (
-                    padding:  EdgeInsets.zero,
+                  onPressed: () {
+                    navigateNextPage3(context);
+                  },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
-                child: Text(
-                  'Log out',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Color(0xFFF21C1C),
-                    fontSize: 17,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
-                    height: 0.09,
-                    letterSpacing: -0.50,
+                  child: Text(
+                    'Log out',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFFF21C1C),
+                      fontSize: 17,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w600,
+                      height: 0.09,
+                      letterSpacing: -0.50,
                     ),
                   ),
                 ),
@@ -385,24 +396,26 @@ class Normalprofile extends StatelessWidget {
                 left: 298,
                 top: 56,
                 child: TextButton(
-                  onPressed:  () {navigateNextPage2(context);},
-                  style:  TextButton.styleFrom (
-                    padding:  EdgeInsets.zero,
+                  onPressed: () {
+                    navigateNextPage2(context);
+                  },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
-                child: Container(
-                  width: 80,
-                  height: 38,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFFFBEB9A),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    shadows: [
-                      BoxShadow(
-                        color: Color(0x3F000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
-                        spreadRadius: 0,
+                  child: Container(
+                    width: 80,
+                    height: 38,
+                    decoration: ShapeDecoration(
+                      color: Color(0xFFFBEB9A),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      shadows: [
+                        BoxShadow(
+                          color: Color(0x3F000000),
+                          blurRadius: 4,
+                          offset: Offset(0, 4),
+                          spreadRadius: 0,
                         )
                       ],
                     ),
