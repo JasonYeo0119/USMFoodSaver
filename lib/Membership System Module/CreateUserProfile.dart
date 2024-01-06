@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:usm_foodsaver/Membership%20System%20Module/NormalProfile.dart';
 import 'package:usm_foodsaver/Membership%20System%20Module/StudentSignUp.dart';
 import 'package:usm_foodsaver/Membership%20System%20Module/UploadUserPhoto.dart';
+import 'package:usm_foodsaver/Reward%20Module/presentation/reward_system_screen/reward_system_screen.dart';
 
 class Createuserprofile extends StatelessWidget {
-
   void navigateNextPage(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
       return Normalprofile();
@@ -20,6 +20,12 @@ class Createuserprofile extends StatelessWidget {
   void navigateNextPage3(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
       return Studentsignup();
+    }));
+  }
+
+  void navigateNextPage4(BuildContext ctx) {
+    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+      return RewardSystemScreen();
     }));
   }
 
@@ -264,16 +270,18 @@ class Createuserprofile extends StatelessWidget {
                 left: 25,
                 top: 80,
                 child: TextButton(
-                  onPressed:  () {navigateNextPage2(context);},
-                  style:  TextButton.styleFrom (
-                    padding:  EdgeInsets.zero,
+                  onPressed: () {
+                    navigateNextPage2(context);
+                  },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
-                child: Container(
-                  width: 170,
-                  height: 171,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFFD9D9D9),
-                    shape: OvalBorder(),
+                  child: Container(
+                    width: 170,
+                    height: 171,
+                    decoration: ShapeDecoration(
+                      color: Color(0xFFD9D9D9),
+                      shape: OvalBorder(),
                     ),
                   ),
                 ),
@@ -283,7 +291,7 @@ class Createuserprofile extends StatelessWidget {
                 top: 135,
                 child: Opacity(
                   opacity: 0.2,
-                child: Image.asset('lib/assets/images/upload symbol.png'),
+                  child: Image.asset('lib/assets/images/upload symbol.png'),
                 ),
                 width: 50,
                 height: 50,
@@ -304,8 +312,7 @@ class Createuserprofile extends StatelessWidget {
                       Container(
                         width: 50,
                         height: 43,
-                        child: Stack(children: [
-                            ]),
+                        child: Stack(children: []),
                       ),
                     ],
                   ),
@@ -317,23 +324,25 @@ class Createuserprofile extends StatelessWidget {
                 left: 108,
                 top: 593,
                 child: TextButton(
-                  onPressed:  () {navigateNextPage(context);},
-                  style:  TextButton.styleFrom (
-                    padding:  EdgeInsets.zero,
+                  onPressed: () {
+                    navigateNextPage(context);
+                  },
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
                   ),
-                child: Container(
-                  width: 175,
-                  height: 56,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFFFB9A9A),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    shadows: [
-                      BoxShadow(
-                        color: Color(0x3F000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
+                  child: Container(
+                    width: 175,
+                    height: 56,
+                    decoration: ShapeDecoration(
+                      color: Color(0xFFFB9A9A),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      shadows: [
+                        BoxShadow(
+                          color: Color(0x3F000000),
+                          blurRadius: 4,
+                          offset: Offset(0, 4),
                           spreadRadius: 0,
                         )
                       ],
@@ -363,26 +372,29 @@ class Createuserprofile extends StatelessWidget {
 
               //Back button
               Positioned(
-                left: 0,
-                top: 25,
-                child: TextButton(
-                  onPressed:  () {navigateNextPage3(context);},
-                  style:  TextButton.styleFrom (
-                    padding:  EdgeInsets.zero,
-                  ),
-                child: Transform(
-                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-1.57),
-                  child: Container(
-                    width: 24,
-                    height: 23,
-                    decoration: ShapeDecoration(
-                      color: Colors.black,
-                      shape: StarBorder.polygon(sides: 3),
+                  left: 0,
+                  top: 25,
+                  child: TextButton(
+                    onPressed: () {
+                      navigateNextPage3(context);
+                    },
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                    ),
+                    child: Transform(
+                      transform: Matrix4.identity()
+                        ..translate(0.0, 0.0)
+                        ..rotateZ(-1.57),
+                      child: Container(
+                        width: 24,
+                        height: 23,
+                        decoration: ShapeDecoration(
+                          color: Colors.black,
+                          shape: StarBorder.polygon(sides: 3),
+                        ),
                       ),
                     ),
-                  ),
-                )
-              ),
+                  )),
               Positioned(
                 left: 207,
                 top: 199,
